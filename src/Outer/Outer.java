@@ -11,8 +11,11 @@ public class Outer {
 		outer.outerMethod();
 	}
 	
-	class Inner{
+	private class Inner{
 		//hiding this class from other classes then we create inner class only outer class can access this class
+		//we can use private / protected modifier for inner class
+		// but we can not use private / protected modifier for outer class
+		
 		void innerMethod() {
 			System.out.println("innerMethod() called...");
 		}
